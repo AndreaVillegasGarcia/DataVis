@@ -63,3 +63,25 @@ const eventHubReader = new EventHubReader(iotHubConnectionString, eventHubConsum
     }
   });
 })().catch();
+
+//---- CONEXIÓN CON EL BACKEND
+
+var request = require('request'),
+    username = "admin",
+    password = "Admin123",
+    url = "http://localhost:8080/openmrs/ws/rest/v1/session",
+    auth = "Basic " + new Buffer(username + ":" + password).toString("base64");
+
+request(
+    {
+        url : url,
+        headers : {
+            "Authorization" : auth
+        }
+    },
+    function (error, response, body) {
+        // Do more stuff with 'body' here
+        console.log("HOLA!")
+        console.log(body)
+    }
+);

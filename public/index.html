@@ -11,20 +11,49 @@
     <script src="js/chart-device-data.js" type="text/javascript" charset="utf-8"></script>
     <link href="css/style.css" rel="stylesheet" />
 
-    <title>Temperature &amp; Humidity Real-time Data</title>
+    <title>e-Health</title>
 </head>
 
-<body>
-    <h1 class="flexHeader">
-        <span>
-            <span id="deviceCount">0 devices</span>
-            <select id="listOfDevices" class="select_box"></select>
-        </span>
-        <span>Temperature & Humidity Real-time Data 2</span>
-    </h1>
-    <div>
+<body style="padding: 0; width: 100%;">
+    <header style="background-color: #DEEEF1; padding:1%; position: sticky; top: 0;">
+        <img style="width:10%;margin-right:3%; display: inline;" src="assets/heart2.png"/>
+        <img style="display: inline;" src="assets/title.png"/>
+    </header>
+    <div style="margin: auto; width: 60%;">
+        <h1 style="margin-top: 10%;">
+            <span>Pulse</span>
+        </h1>
         <canvas id="iotChart"></canvas>
-    </div>
+
+        <h1 style="margin-top: 10%;">
+            <span>Temperature</span>
+        </h1>
+        <canvas id="iotChart2"></canvas>
+
+        <h1 style="margin-top: 10%;">
+            <span>SpO2</span>
+        </h1>
+        <canvas id="iotChart3"></canvas>
+
+        <h1 style="margin-top: 10%;">
+            <span>Systolic Blood Pressure</span>
+        </h1>
+        <canvas id="iotChart4"></canvas>
+
+        <h1 style="margin-top: 10%;">
+            <span>Diastolic Blood Pressure</span>
+        </h1>
+        <canvas id="iotChart5"></canvas>
+
+        <h1 style="margin-top: 10%;">
+            <span>Respiratory Frequency</span>
+        </h1>
+        <canvas id="iotChart6"></canvas>
+    </div>    
+    <footer style="background-color:lightgray; bottom: 0; width: 100%;">
+        <p style="color:white ;margin: 0px; bottom: 0; position: fixed">Developed by Andrea Villegas</p>
+    </footer>
 </body>
+
 
 </html>

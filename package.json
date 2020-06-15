@@ -23,7 +23,9 @@
     "eslint-plugin-react": ">=7.14.3",
     "eslint-plugin-standard": ">=4.0.1",
     "express": ">=4.17.1",
+    "http": "0.0.1-security",
     "minimist": ">=1.2.5",
+    "request": "^2.88.2",
     "rhea-promise": "^1.0.0",
     "ws": ">=7.1.2"
   }
